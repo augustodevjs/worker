@@ -1,3 +1,6 @@
+using WorkerService.Application.Services;
+using WorkerService.Application.Interfaces;
+
 namespace WorkerService
 {
     public class Program
@@ -7,7 +10,9 @@ namespace WorkerService
             IHost host = Host.CreateDefaultBuilder(args)
                 .ConfigureServices(services =>
                 {
-                    services.AddHostedService<Worker>();
+                    services.AddHostedService<Worker>()
+                    .AddSingleton<IEmail, Email>()
+                    .AddSingleton<IHttpService, HttpService>();
                 })
                 .Build();
 
