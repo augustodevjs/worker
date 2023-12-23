@@ -1,6 +1,6 @@
 ## Worker Service
 
-Este é um projeto simples de Worker Service para estudos. O Worker Service monitora o status de um site e envia uma notificação por e-mail se o site estiver offline
+O Worker Service monitora o status de um site e envia uma notificação por e-mail se o site estiver offline
 
 ## Configuração
 
