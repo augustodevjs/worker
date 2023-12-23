@@ -1,6 +1,6 @@
 ## Worker Service
 
-O Worker Service monitora o status de um site e envia uma notificação por e-mail se o site estiver offline
+Esse Worker Service monitora o status de um site e envia uma notificação por e-mail se o site estiver offline
 
 ## Configuração
 
